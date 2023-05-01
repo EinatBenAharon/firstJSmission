@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jsMission.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="jsMission.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>First Mission On JS</h1>
+        <!--mission number 1-->
+        <div class="box-number-1">
+            <h2 id="h2_boom_tryAgain">Enter 2 equal numbers:</h2>
+            <input id="input_boom_tryAgain" type="number" value="0">
+            <input id="input_boom_tryAgain2" type="number" value="0">
+            <button id="btn_boom_tryAgain">check</button>
+            <p><span id="span_boom_tryAgain"></span></p>
+        </div>
+        <hr>
+        <!--mission number 2-->
+        <div class="box-number-2">
+            <h2 id="h2_addition">Enter 2 numbers for addition:</h2>
+            <input id="input_addition" type="number" value="0">
+            <input id="input_addition2" type="number" value="0">
+            <button id="btn_addition">add</button>
+            <p><span id="span_addition"></span></p>
+        </div>
+        <hr>
+        <!--mission number 3-->
+        <div class="box-number-3">
+            <h2 id="h2_multi">Enter 2 numbers for multiply:</h2>
+            <input id="input_multi" type="number" value="0">
+            <input id="input_multi2" type="number" value="0">
+            <button id="btn_multi">multiply</button>
+            <p><span id="span_multi"></span></p>
+        </div>
+        <hr>
+        <!--mission number 4-->
+        <div class="box-number-4">
+            <h2 id="h2_daysOfWeek">Choose day of the week:</h2>
+            <select id="select_daysOfWeek">
+                <option>Choose day:</option>
+                <option value="1">Sunday</option>
+                <option value="2">Monday</option>
+                <option value="3">Tuesday</option>
+                <option value="4">Wednesday</option>
+                <option value="5">Thursday</option>
+                <option value="6">Friday</option>
+                <option value="7">Saturday</option>
+            </select>
+            <p><span id="span_daysOfWeek"></span></p>
+        </div>
+        <hr>
+        <!--mission number 5-->
+        <div class="box-number-5">
+            <h2 id="h2_dayOfMonth">Enter the day of the month:</h2>
+            <input id="input_dayOfMonth" type="number" min="1" max="31" value="1">
+            <p><span id="span_dayOfMonth"></span></p>
+        </div>
+        <hr>
+        <!--mission number 6-->
+        <div class="box-number-6">
+            <h2 id="id_holiday">Select holiday button:</h2>
+            <button onclick="btnPurim()">Purim</button>
+            <button onclick="btnShavuot()">Shavuot</button>
+            <button onclick="btnSuckot()">Suckot</button>
+            <button onclick="btnPassover()">Passover</button>
+            <p>Let's celebrate <span id="span_holiday"></span></p>
+        </div>
+        <hr>
+        <!--mission  number 7-->
+        <div class="box-number-7">
+            <form name="myForm">
+                <h2 id="h2_form">Enter username and password:</h2>
+                <i class="fa-solid fa-user" style="color: #000000;"></i>
+                <label>username</label>
+                <input id="input_username" type="text" placeholder="username">
+                <br>
+                <i class="fa-solid fa-unlock" style="color: #000000;"></i>
+                <label>password</label>
+                <input id="input_password" type="password" placeholder="******"
+                    title="the password must contain at least 6 numbers">
+                <p><span id="span_formMsg"></span></p>
+                <br>
+                <button type="button" id="btn_form">sign in</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

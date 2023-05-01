@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.box-number-1,
+.box-number-2,
+.box-number-3,
+.box-number-4,
+.box-number-5,
+.box-number-6,
+.box-number-7 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+h2,
+input,
+button,
+p,
+select,
+form,
+label {
+    width: 90%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 6px;
+    margin: 4px auto;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+input,
+select {
+    border-radius: 10px;
+}
+
+button {
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+}
+
+form {
+    background-color: rgb(224, 224, 224);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+}
